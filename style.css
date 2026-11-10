@@ -1,0 +1,435 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color:rgb(172, 27, 27);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#bannerPrincipal {
+    background-image: url("BannerPrincipal.png");
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bannerPrincipal p {
+    font-size: 20px;
+}
+
+main,
+section {
+    padding: 20px; 
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+img {
+    width: 250px;
+}
+
+#hondacivic,
+#Corolla,
+#Onix {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: column;
+}
+
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.marca1,
+.marca2,
+.marca3,
+.marca4,
+.marca5,
+.marca6,
+.marca7,
+.marca8 {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.marca1 img,
+.marca2 img,
+.marca3 img,
+.marca4 img,
+.marca5 img,
+.marca6 img,
+.marca7 img,
+.marca8 img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-oferta {
+    background-color: white;
+
+    width: 250px;
+
+    padding: 20px;
+    margin: 10px;
+
+    text-align: center;
+}
+
+.card-oferta img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-oferta h2 {
+    color:rgb(172, 27, 27);;
+}
+
+.botao {
+    background-color:rgb(172, 27, 27);;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+form {
+    background-color: white;
+    padding: 100px;
+    margin: auto;
+    width: 250px;
+    align-items: center;
+    justify-content: center;     
+    text-align: center; 
+}
+
+input {
+    width: 250px;
+    padding: 8px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px; 
+}
+
+button {
+    background-color:rgb(172, 27, 27);;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(172, 27, 27);
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+/* PÁGINAS DAS MARCAS */
+
+.carros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carro {
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.carro img {
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+    margin: 10px, 10px;
+}
+
+.carro h3 {
+    color: rgb(172, 27, 27);
+    font-size: 24px;
+}
+
+.carro p {
+    font-size: 16px;
+}
+
+.carro strong {
+    color: rgb(172, 27, 27);
+    font-size: 20px;
+}
+
+.carros hr {
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+/* BOTÃO VER CARROS */
+.marcas a {
+    display: inline-block;
+    background-color: rgb(172, 27, 27);
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.marcas a:hover {
+    background-color: #8f1616;
+}
+
+
+/* RESPONSIVIDADE DO SITE */
+
+/* CARDS DE OFERTAS */
+.ofertas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-oferta {
+    width: auto;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-oferta img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* TABLETS E TELAS MÉDIAS */
+@media (max-width: 1000px) {
+
+    .ofertas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* TABLETS E CELULARES */
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    .cabecalho {
+        text-align: center;
+    }
+
+    .cabecalho h1 {
+        font-size: 28px;
+    }
+
+    /* Menu */
+   #botoesCabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#botoesCabecalho a {
+    margin: 5px;
+    font-size: 16px;
+}
+    /* Banner */
+    #bannerPrincipal {
+        width: 100%;
+        padding: 30px 10px;
+        box-sizing: border-box;
+    }
+
+    #bannerPrincipal p:first-child {
+        font-size: 28px;
+    }
+
+    #bannerPrincipal p:last-child {
+        font-size: 16px;
+    }
+
+    /* Seções */
+    section {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Imagens dos carros */
+    #hondacivic img,
+    #Corolla img,
+    #Onix img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* Caixas dos carros */
+    #hondacivic,
+    #Corolla,
+    #Onix {
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        padding: 15px;
+    }
+
+    /* Sobre nós */
+    #Sobre {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Formulário */
+    form {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    /* Ofertas */
+    .ofertas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Rodapé */
+    footer {
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+
+    .cabecalho h1 {
+        font-size: 24px;
+    }
+
+   #botoesCabecalho {
+    flex-direction: row;
+    gap: 5px;
+}
+
+#botoesCabecalho a {
+    font-size: 15px;
+    margin: 3px;
+}
+    #bannerPrincipal p:first-child {
+        font-size: 23px;
+    }
+
+    #bannerPrincipal p:last-child {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Ofertas */
+    .ofertas {
+        grid-template-columns: 1fr;
+    }
+
+    .card-oferta {
+        width: 100%;
+    }
+
+    /* Formulário */
+    form {
+        padding: 15px;
+    }
+}
